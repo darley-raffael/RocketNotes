@@ -10,3 +10,14 @@ export const Container = styled.div`
    "header"
    "contents"
 `;
+
+
+export const Links = styled.ul`
+    > li {
+        margin-top: 12px;
+
+        a{
+            color: ${({ theme }) => theme.COLORS.WHITE};
+        }
+    }
+`
