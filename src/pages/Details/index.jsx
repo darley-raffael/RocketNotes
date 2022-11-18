@@ -4,12 +4,15 @@ import { Header } from "../../components/header/index.jsx"
 import { Button } from "../../components/button"
 import { Section } from "../../components/section"
 import { Tag } from "../../components/tags"
+import { ButtonText } from "../../components/buttonText"
 
 export default function Details() {
   return (
 
     <Container>
       <Header />
+
+    <ButtonText title="Excluir nota" />
 
       <Section title="Links Úteis" >
         <Links>
