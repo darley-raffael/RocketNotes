@@ -12,7 +12,7 @@ export const Container = styled.div`
     border-radius: 10px;
 
 
-    >input{ /* css */
+    >input{ 
         height: 56px;
         width: 100%;
 
@@ -25,12 +25,11 @@ export const Container = styled.div`
 
         &:placeholder {
             color: ${({ theme }) => theme.COLORS.GRAY_300};
-        }
+        };
     }
 
     >svg{
         margin-left: 16px;
-            
         }
 
 `
