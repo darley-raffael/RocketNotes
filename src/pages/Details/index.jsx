@@ -7,7 +7,7 @@ import { Section } from "../../components/section"
 import { Tag } from "../../components/tags"
 import { ButtonText } from "../../components/buttonText"
 
-export default function Details() {
+export function Details() {
   return (
 
     <Container>
