@@ -16,7 +16,7 @@ export const Container = styled.header`
     padding: 0 80px;
 
 
-`
+`;
 
 export const Profile = styled(Link)`
     display: flex;
@@ -48,7 +48,7 @@ export const Profile = styled(Link)`
         }
     }
 
-`
+`;
 
 export const Logout = styled.button`
     border: none;
@@ -58,4 +58,4 @@ export const Logout = styled.button`
         color: ${({ theme }) => theme.COLORS.GRAY_100};
         font-size: 36px;
     }
-`
+`;

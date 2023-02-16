@@ -63,7 +63,7 @@ export const Avatar = styled.div`
     input{ display: none; }
     }
 
-`
+`;
 
 
 
