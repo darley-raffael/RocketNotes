@@ -13,6 +13,9 @@ import { Container, Form } from "./styles";
 export function New() {
 	const [ links, setLinks ] = useState([]);
 	const [ newLink, setNewLink ] = useState("");
+
+	const [ tags, setTags ] = useState([]);
+	const [ newTag, setNewTag ] = useState("");
 	
 	function handleAddLink(){
 		setLinks(lastState => [...lastState, newLink]);
@@ -21,6 +24,16 @@ export function New() {
 	}
 	function handleRemoveLink(deleted){
 		setLinks(lastState => lastState.filter(link => link !== deleted));
+	}
+
+	function handleAddTags(){
+		setTags(lastState => [...lastState, newTag]);
+
+		setNewTag("");
+	}
+
+	function handleRemoveTag(deleted){
+		setTags(lastState => lastState.filter(tag => tag !== deleted));
 	}
 	return (
 		<Container>
@@ -56,8 +69,25 @@ export function New() {
 
 					<Section title="Marcadores">
 						<div className="tags" >
-							<NoteItem value="React" />
-							<NoteItem isNew placeholder="Nova tag" />
+							{
+								tags.map((tag, index) => (
+
+									<NoteItem 
+										key={String(index)}
+										value={tag}
+										onClick={() => handleRemoveTag(tag)}
+									/>
+								))
+
+							}
+							
+							<NoteItem 
+								isNew 
+								placeholder="Nova tag"
+								value={newTag} 
+								onChange={ e => setNewTag( e.target.value )}
+								onClick={handleAddTags}
+							/>
 						</div>
 					</Section>
 
