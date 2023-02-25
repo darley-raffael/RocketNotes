@@ -20,6 +20,9 @@ export default createGlobalStyle`
         font-size: 16px;
         outline: none;
     }
+    ul{
+        list-style: none;
+    }
 
     a{
         text-decoration: none;
