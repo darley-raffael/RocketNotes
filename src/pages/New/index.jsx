@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Textarea } from "../../components/Textarea"; 
+import { TextArea } from "../../components/TextArea"; 
 import { NoteItem } from "../../components/NoteItem";
 import { Section } from "../../components/Section"; 
 import { Header } from "../../components/Header"; 
@@ -79,7 +79,7 @@ export function New() {
 						placeholder="Título" 
 						onChange={ e => setTitle(e.target.value)}
 					/>
-					<Textarea 
+					<TextArea 
 						placeholder="Observações"
 						onChange={ e => setDescription(e.target.value)}
 					/>
