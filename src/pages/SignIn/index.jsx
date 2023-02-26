@@ -1,9 +1,9 @@
-import { useState } from "react";
 import { Container, Form, Background } from "./styles";
-import { Link } from "react-router-dom";
-import { Input } from "../../components/Input";
 import { FiMail, FiLock } from "react-icons/fi";
 import { Button } from "../../components/Button";
+import { Input } from "../../components/Input";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 import { useAuth } from "../../hooks/auth";
 
