@@ -1,6 +1,6 @@
 import "./style.js";
 import { Container, Links } from "./style.js";
-import { Header } from "../../components/header/index.jsx";
+import {Header} from "../../components/Header";
 import { Content } from "./style";
 import { Button } from "../../components/Button";
 import { Section } from "../../components/Section";
