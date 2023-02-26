@@ -4,7 +4,7 @@ import { Header } from "../../components/header/index.jsx";
 import { Content } from "./style";
 import { Button } from "../../components/Button";
 import { Section } from "../../components/Section";
-import { Tag } from "../../components/Tags";
+import { Tags } from "../../components/Tags";
 import { ButtonText } from "../../components/ButtonText";
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -85,7 +85,7 @@ export function Details() {
 							<Section title="Marcadores" >
 								{	
 									data.tags.map(tag => (
-										<Tag 
+										<Tags 
 											key={String(tag.id)}
 											title={tag.name} />
 									))
