@@ -1,10 +1,10 @@
 import { Container } from "./style";
 
 
-export function Tag({ title }){
-    return (
-        <Container>
-            {title}
-        </Container>
-    )
+export function Tags({ title }){
+	return (
+		<Container>
+			{title}
+		</Container>
+	);
 }
