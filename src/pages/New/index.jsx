@@ -129,6 +129,7 @@ export function New() {
 
 					<Button 
 						title="Salvar" 
+						loading
 						onClick={ handleNewNote }
 					/>
 				</Form>
