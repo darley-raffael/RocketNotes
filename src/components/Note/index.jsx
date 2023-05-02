@@ -7,12 +7,12 @@ export function Note({ data, ...rest }) {
 			<h1>{data.title}</h1>
 
 			{
-				data.tags && 
-                <footer>
-                	{
-                		data.tags.map(tag => <Tags title={tag.name} key={tag.id} />)
-                	}
-                </footer>
+				data.tags &&
+				<footer>
+					{
+						data.tags.map(tag => <Tags title={tag.name} key={tag.id} />)
+					}
+				</footer>
 			}
 		</Container>
 	);
